@@ -927,34 +927,6 @@ input,textarea,select{font-family:var(--fb)}
   .sf-inner{grid-template-columns:1fr}
 }
 
-/* ── PROBLEMS — Urgency red accents ── */
-#page-problems .prob-num{color:var(--urgent);opacity:0.65}
-#page-problems .prob-item.open{background:#fef2f2}
-#page-problems .prob-item:hover{border-color:rgba(192,57,43,0.3)}
-#page-problems .prob-item.open{border-color:rgba(192,57,43,0.4)}
-#page-problems .prob-body-inner{border-left:2px solid var(--urgent)}
-#page-problems .pb-cost{background:rgba(192,57,43,0.08);color:var(--urgent)}
-#page-problems .prob-outs li::before{color:var(--urgent)}
-#page-problems .cta-band{background:var(--urgent)}
-#page-problems .cta-band::before{background:radial-gradient(ellipse at center,rgba(255,255,255,0.06) 0%,transparent 60%)}
-/* Problems page hero — red left border accent on the tag */
-#page-problems .page-hero{border-bottom:3px solid var(--urgent)}
-#page-problems .page-hero::after{
-  background:repeating-linear-gradient(
-    90deg,
-    var(--urgent) 0px,var(--urgent) 60px,
-    var(--urgent2) 60px,var(--urgent2) 62px,
-    rgba(192,57,43,0.15) 62px,rgba(192,57,43,0.15) 120px
-  );opacity:0.7;
-}
-#page-problems .tag{
-  background:rgba(192,57,43,0.08);
-  border-color:rgba(192,57,43,0.2);
-  color:var(--urgent);
-}
-#page-problems .tag-dot{background:var(--urgent)}
-#page-problems .h-sect em{color:var(--urgent)}
-#page-problems .rule{background:var(--urgent)}
 
 
 /* ── Coming Soon section ── */
@@ -1201,8 +1173,7 @@ input,textarea,select{font-family:var(--fb)}
   <ul class="nav-links">
     <li><a onclick="nav('home')" data-p="home">Home</a></li>
     <li><a onclick="nav('matcher')" data-p="matcher">Find Your Solution</a></li>
-    <li><a onclick="nav('problems')" data-p="problems">The Problems</a></li>
-    <li><a onclick="nav('platform')" data-p="platform">Our Products</a></li>
+    <li><a onclick="nav('platform')" data-p="platform">Our Solutions</a></li>
     <li><a onclick="nav('membership')" data-p="membership">Membership</a></li>
     <li><a onclick="nav('founding')" data-p="founding">Founding Partners</a></li>
     <li><a onclick="nav('contact')" class="nav-cta" data-p="contact">Start a Conversation</a></li>
@@ -1212,20 +1183,18 @@ input,textarea,select{font-family:var(--fb)}
 <nav class="drawer" id="drawer">
   <a onclick="nav('home');closeDrawer()">Home</a>
   <a onclick="nav('matcher');closeDrawer()">1 — Find Your Solution</a>
-  <a onclick="nav('problems');closeDrawer()">2 — The Problems</a>
-  <a onclick="nav('platform');closeDrawer()">3 — Our Products</a>
-  <a onclick="nav('membership');closeDrawer()">4 — Benefits of Membership</a>
-  <a onclick="nav('founding');closeDrawer()">5 — Become a Founding Partner</a>
-  <a onclick="nav('contact');closeDrawer()">6 — Start a Conversation</a>
+  <a onclick="nav('platform');closeDrawer()">2 — Our Solutions</a>
+  <a onclick="nav('membership');closeDrawer()">3 — Benefits of Membership</a>
+  <a onclick="nav('founding');closeDrawer()">4 — Become a Founding Partner</a>
+  <a onclick="nav('contact');closeDrawer()">5 — Start a Conversation</a>
 </nav>
 <div class="strip" role="tablist">
   <div class="s-tab active" data-tab="home"       onclick="nav('home')"><span class="s-num">H</span> Home</div>
   <div class="s-tab"        data-tab="matcher"    onclick="nav('matcher')"><span class="s-num">1</span> Find Your Solution</div>
-  <div class="s-tab"        data-tab="problems"   onclick="nav('problems')"><span class="s-num">2</span> The Problems</div>
-  <div class="s-tab"        data-tab="platform"   onclick="nav('platform')"><span class="s-num">3</span> Our Products</div>
-  <div class="s-tab"        data-tab="membership" onclick="nav('membership')"><span class="s-num">4</span> Benefits of Membership</div>
-  <div class="s-tab"        data-tab="founding"   onclick="nav('founding')"><span class="s-num">5</span> Become a Founding Partner</div>
-  <div class="s-tab"        data-tab="contact"    onclick="nav('contact')"><span class="s-num">6</span> Start a Conversation</div>
+  <div class="s-tab"        data-tab="platform"   onclick="nav('platform')"><span class="s-num">2</span> Our Solutions</div>
+  <div class="s-tab"        data-tab="membership" onclick="nav('membership')"><span class="s-num">3</span> Benefits of Membership</div>
+  <div class="s-tab"        data-tab="founding"   onclick="nav('founding')"><span class="s-num">4</span> Become a Founding Partner</div>
+  <div class="s-tab"        data-tab="contact"    onclick="nav('contact')"><span class="s-num">5</span> Start a Conversation</div>
 </div>
 <div class="page-wrap">
 
@@ -1238,12 +1207,14 @@ input,textarea,select{font-family:var(--fb)}
           The Connected Campus Initiative
           <span class="hero-pill-arr">&#8595;</span>
         </button>
-        <h1 class="hero-h1">One membership.<br><em>Six problems solved.</em></h1>
+        <h1 class="hero-h1">One membership,<br><em>multiple solutions.</em></h1>
         <p class="hero-body">
-          Superspree isn&#8217;t a technology product &#8212; it&#8217;s a membership ecosystem.<br><br>
-          Across the UK, post-16 institutions are facing the same six problems. The same gaps in wellbeing data. The same open-day leads that disappear. The same students who slipped through because the right connection came a week too late.<br><br>
-          We built Superspree to close those gaps &#8212; through frictionless technology, awe-informed research, and a model designed entirely around your students.<br><br>
-          Tell us about your institution. Let&#8217;s see what&#8217;s possible.
+          Superspree isn&#8217;t a product. It&#8217;s a membership ecosystem designed to make engagement human again in a digital world.<br><br>
+          Across education, the challenges are familiar. Disconnected wellbeing signals. Lost open-day momentum. Moments where a student needed connection and it came too late.<br><br>
+          We built Superspree to close those gaps.<br><br>
+          By combining frictionless, no-barrier technology with behavioural research and real-world insight, we help institutions turn everyday interactions into meaningful moments &#8212; the kind that drive belonging, participation, and better outcomes for every student.<br><br>
+          This isn&#8217;t another system to manage. It&#8217;s a smarter way to understand, engage, and respond &#8212; all through one membership.<br><br>
+          Let&#8217;s start by finding out about you. Tell us about your institution. Let&#8217;s see what becomes possible.
         </p>
         <button class="hero-cta" onclick="nav('matcher')">
           Find your solution <span class="hero-cta-arr">&#8594;</span>
@@ -1291,54 +1262,14 @@ input,textarea,select{font-family:var(--fb)}
   </div>
 </div>
 
-<!-- PROBLEMS -->
-<div class="page" id="page-problems">
-  <div class="page-hero ph-ink z1">
-    <div class="container">
-      <span class="tag"><span class="tag-dot"></span>The Problems</span>
-      <h1 class="h-sect">Six structural problems<br><em>costing you more than you think.</em></h1>
-      <span class="rule" style="background:var(--amber)"></span>
-      <p class="lead" style="max-width:none;margin-left:auto;margin-right:auto">Every post-16 institution we work with faces the same six challenges. Not some of them &#8212; all six. They are structural, persistent, and expensive. And in most cases, they are hiding in plain sight.</p>
-    </div>
-  </div>
-  <section class="s s--parch z1">
-    <div class="container"><div id="prob-accordion"></div></div>
-  </section>
-  <!-- AWE CALLOUT — peak moment after reading all 6 problems -->
-  <section class="s--parch z1" style="padding:0 0 8px">
-    <div class="container">
-      <div class="awe-stat-trio">
-        <div class="awe-stat-trio-item">
-          <div class="awe-stat-trio-n">6</div>
-          <div class="awe-stat-trio-l">Structural<br>problems</div>
-        </div>
-        <div class="awe-stat-trio-item">
-          <div class="awe-stat-trio-n">1</div>
-          <div class="awe-stat-trio-l">Membership<br>solves all</div>
-        </div>
-        <div class="awe-stat-trio-item">
-          <div class="awe-stat-trio-n">15</div>
-          <div class="awe-stat-trio-l">Founding<br>places left</div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <div class="cta-band z1">
-    <h2>You&#8217;ve seen the problems.<br><em>Now see what solves them.</em></h2>
-    <p>These aren&#8217;t hypothetical solutions. They&#8217;re built, deployed, and working right now.</p>
-    <button class="btn-pink" onclick="nav('platform')" style="margin-right:12px">See the Products &#8594;</button>
-    <button class="btn-out" style="border-color:rgba(247,244,239,0.5);color:var(--parch)" onclick="nav('matcher')">Find Your Solution</button>
-  </div>
-</div>
-
 <!-- PLATFORM -->
 <div class="page" id="page-platform">
   <div class="page-hero ph-teal z1">
     <div class="container">
-      <span class="tag"><span class="tag-dot"></span>Our Products</span>
-      <h1 class="h-sect">Nine solutions. <em>One membership.</em></h1>
+      <span class="tag"><span class="tag-dot"></span>Our Solutions</span>
+      <h1 class="h-sect">Our solutions. <em>One membership.</em></h1>
       <span class="rule" style="background:var(--amber)"></span>
-      <p class="lead" style="max-width:none;margin-left:auto;margin-right:auto">Every product in the Superspree ecosystem is built around the same principle: make the human experience frictionless, data-rich, and real. Each one is a single tap. Each one generates data. Each one is already changing how institutions understand their students.</p>
+      <p class="lead" style="max-width:none;margin-left:auto;margin-right:auto">Post-16 institutions face a familiar set of challenges &#8212; disconnected wellbeing data, lost admissions momentum, students who needed support before anyone knew to offer it. Every solution in the Superspree ecosystem is built to address exactly those gaps: a single tap, real data, and insight that arrives in time to act on it.</p>
     </div>
   </div>
   <section class="s s--parch z1">
@@ -1392,7 +1323,7 @@ input,textarea,select{font-family:var(--fb)}
       </div>
     </div>
   </section>
-  <div class="plat-bar z1">★ &nbsp; Superspree is not a technology product. It is a membership ecosystem built around the science of human behaviour. &nbsp; ★</div>
+  <div class="plat-bar z1">★ &nbsp; Superspree is not a product. It is a membership ecosystem built around the science of human behaviour. &nbsp; ★</div>
 </div>
 
 <!-- MEMBERSHIP -->
@@ -1666,8 +1597,8 @@ input,textarea,select{font-family:var(--fb)}
         <div class="sf-brand"><span class="sf-brand-name">Superspree</span><span class="sf-brand-edu">education</span></div>
         <p class="sf-desc">A membership ecosystem built around behavioural science, frictionless infrastructure, and the belief that technology should make education more human &#8212; not less.</p>
       </div>
-      <div class="sf-col"><div class="sf-col-t">Platform</div><ul><li onclick="nav('platform')">Our Products</li><li onclick="nav('membership')">Membership</li><li onclick="nav('founding')">Founding Partners</li></ul></div>
-      <div class="sf-col"><div class="sf-col-t">Discover</div><ul><li onclick="nav('problems')">The Problems</li><li onclick="nav('matcher')">Find Your Solution</li><li onclick="nav('contact')">Contact</li></ul></div>
+      <div class="sf-col"><div class="sf-col-t">Platform</div><ul><li onclick="nav('platform')">Our Solutions</li><li onclick="nav('membership')">Membership</li><li onclick="nav('founding')">Founding Partners</li></ul></div>
+      <div class="sf-col"><div class="sf-col-t">Discover</div><ul><li onclick="nav('matcher')">Find Your Solution</li><li onclick="nav('contact')">Contact</li></ul></div>
       <div class="sf-col"><div class="sf-col-t">Contact</div><ul><li><a href="/cdn-cgi/l/email-protection#0a797e7f6b787e4a797f7a6f78797a786f6f24696567" style="color:inherit"><span class="__cf_email__" data-cfemail="0172757460737541727471647372717364642f626e6c">[email&#160;protected]</span></a></li></ul></div>
     </div>
     <div class="sf-bottom">
@@ -1921,35 +1852,7 @@ const NINE=[
   });
 })();
 
-/* PROBLEMS */
-(function(){
-  const acc=document.getElementById('prob-accordion');if(!acc)return;
-  Object.keys(PROBLEMS).forEach(num=>{
-    const p=PROBLEMS[num];
-    const item=document.createElement('div');item.className='prob-item';
-    const outsHtml=p.outs&&p.outs.length?'<ul class="prob-outs">'+p.outs.map(o=>`<li>${o}</li>`).join('')+'</ul>':'';
-    item.innerHTML=`
-      <button class="prob-trigger" onclick="toggleProb(this)">
-        <div class="prob-num">${num}</div>
-        <div class="prob-t">${p.t}</div>
-        <span class="prob-chev">&#9660;</span>
-      </button>
-      <div class="prob-body"><div class="prob-body-inner">
-        <span class="pb pb-cost">The Cost</span>
-        <p class="prob-text">${p.cost}</p>
-        <span class="pb pb-sol">The Superspree Solution</span>
-        <div class="prob-sol-head">${p.st||''}</div>
-        <p class="prob-text">${p.sol}</p>
-        ${outsHtml}
-      </div></div>`;
-    acc.appendChild(item);
-  });
-})();
-function toggleProb(btn){
-  const item=btn.closest('.prob-item'),was=item.classList.contains('open');
-  document.querySelectorAll('.prob-item.open').forEach(i=>i.classList.remove('open'));
-  if(!was)item.classList.add('open');
-}
+
 
 /* PRODUCTS */
 (function(){
